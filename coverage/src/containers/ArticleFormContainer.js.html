@@ -1,0 +1,435 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for src/containers/ArticleFormContainer.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../prettify.css" />
+    <link rel="stylesheet" href="../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../index.html">all files</a> / <a href="index.html">src/containers/</a> ArticleFormContainer.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">49.43% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>43/87</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">72.09% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>31/43</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">88.24% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>15/17</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">10.87% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>5/46</span>
+      </div>
+      <div class='fl pad1y'>
+        <span class="strong">7 statements, 9 functions, 16 branches</span>
+        <span class="quiet">Ignored</span>  &nbsp;&nbsp;&nbsp;&nbsp;
+      </div>
+    </div>
+  </div>
+  <div class='status-line low'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123</td><td class="line-coverage quiet"><span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import React, { Component } from 'react';
+import TitleField from '../components/TitleField';
+import BodyField from '../components/BodyField';
+&nbsp;
+class ArticleFormContainer extends Component {
+<span class="fstat-no" title="function not covered" >  constructor(props) <span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" >{</span></span></span></span>
+    super(props)
+<span class="cstat-no" title="statement not covered" >    t</span>his.state = {
+      articleTitle: '',
+      articleBody: '',
+      errors: {}
+    }
+&nbsp;
+<span class="cstat-no" title="statement not covered" >    t</span>his.handleArticleTitleChange = this.handleArticleTitleChange.bind(this);
+<span class="cstat-no" title="statement not covered" >    t</span>his.handleArticleBodyChange = this.handleArticleBodyChange.bind(this);
+<span class="cstat-no" title="statement not covered" >    t</span>his.handleSubmit = this.handleSubmit.bind(this);
+<span class="cstat-no" title="statement not covered" >    t</span>his.handleClearForm = this.handleClearForm.bind(this);
+<span class="cstat-no" title="statement not covered" >    t</span>his.validateArticleTitle = this.validateArticleTitle.bind(this);
+<span class="cstat-no" title="statement not covered" >    t</span>his.validateArticleBody = this.validateArticleBody.bind(this);
+  }
+&nbsp;
+  handleArticleTitleChange(event){
+<span class="cstat-no" title="statement not covered" >    t</span>his.validateArticleTitle(event.target.value);
+<span class="cstat-no" title="statement not covered" >    t</span>his.setState({articleTitle: event.target.value})
+  }
+&nbsp;
+  handleArticleBodyChange(event){
+<span class="cstat-no" title="statement not covered" >    t</span>his.validateArticleBody(event.target.value);
+<span class="cstat-no" title="statement not covered" >    t</span>his.setState({articleBody: event.target.value});
+  }
+&nbsp;
+  handleSubmit(){
+<span class="cstat-no" title="statement not covered" >    e</span>vent.preventDefault();
+<span class="cstat-no" title="statement not covered" >    if(this.validateArticleTitle(this.state.articleTitle) &amp;&amp;</span>
+        this.validateArticleBody(this.state.articleBody)){
+&nbsp;
+<span class="cstat-no" title="statement not covered" >      l</span>et newArticle = {
+        title: this.state.articleTitle,
+        body: this.state.articleBody
+      }
+&nbsp;
+<span class="cstat-no" title="statement not covered" >      t</span>his.props.addNewArticle(newArticle);
+<span class="cstat-no" title="statement not covered" >      t</span>his.handleClearForm(event);
+&nbsp;
+    }
+  }
+&nbsp;
+  handleClearForm(event){
+<span class="cstat-no" title="statement not covered" >    e</span>vent.preventDefault();
+<span class="cstat-no" title="statement not covered" >    t</span>his.setState({
+      articleTitle: '',
+      articleBody: '',
+      errors: {}
+    })
+  }
+&nbsp;
+  validateArticleBody(input){
+<span class="cstat-no" title="statement not covered" >    if(input.trim() === ''){</span>
+<span class="cstat-no" title="statement not covered" >      l</span>et newError = {articleBody: 'You must enter an article body.'}
+<span class="cstat-no" title="statement not covered" >      t</span>his.setState({ errors: Object.assign(this.state.errors, newError) })
+<span class="cstat-no" title="statement not covered" >      r</span>eturn false;
+    }else{
+<span class="cstat-no" title="statement not covered" >      l</span>et errorState = this.state.errors;
+<span class="cstat-no" title="statement not covered" >      d</span>elete errorState.articleTitle;
+<span class="cstat-no" title="statement not covered" >      t</span>his.setState({ errors: errorState })
+<span class="cstat-no" title="statement not covered" >      r</span>eturn true;
+    }
+  }
+&nbsp;
+  validateArticleTitle(input){
+<span class="cstat-no" title="statement not covered" >    if(input.trim() === ''){</span>
+<span class="cstat-no" title="statement not covered" >      l</span>et newError = {articleTitle: 'You must enter an article title.'}
+<span class="cstat-no" title="statement not covered" >      t</span>his.setState({ errors: Object.assign(this.state.errors, newError) })
+<span class="cstat-no" title="statement not covered" >      r</span>eturn false;
+    }else{
+<span class="cstat-no" title="statement not covered" >      l</span>et errorState = this.state.errors;
+<span class="cstat-no" title="statement not covered" >      d</span>elete errorState.articleTitle;
+<span class="cstat-no" title="statement not covered" >      t</span>his.setState({ errors: errorState })
+<span class="cstat-no" title="statement not covered" >      r</span>eturn true;
+    }
+  }
+&nbsp;
+&nbsp;
+  render() {
+&nbsp;
+<span class="cstat-no" title="statement not covered" >    l</span>et errorDiv;
+<span class="cstat-no" title="statement not covered" >    l</span>et errorItems;
+&nbsp;
+<span class="cstat-no" title="statement not covered" >    if(Object.keys(this.state.errors).length &gt; 0) {</span>
+<span class="cstat-no" title="statement not covered" >      e</span>rrorItems = Object.values(this.state.errors).map(<span class="fstat-no" title="function not covered" >error =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >        r</span>eturn(&lt;li key={error}&gt;{error}&lt;/li&gt;)
+      })
+<span class="cstat-no" title="statement not covered" >      e</span>rrorDiv = &lt;div className="callout alert"&gt;{errorItems}&lt;/div&gt;
+    }
+&nbsp;
+<span class="cstat-no" title="statement not covered" >    r</span>eturn(
+      &lt;form className="callout new-article-form" onSubmit={this.handleSubmit}&gt;
+        {errorDiv}
+        &lt;TitleField
+          content={this.state.articleTitle}
+          label="Article Title"
+          name="article-title"
+          onChange={this.handleArticleTitleChange}
+        /&gt;
+        &lt;BodyField
+          content={this.state.articleBody}
+          label="Article Body"
+          name="article-body"
+          onChange={this.handleArticleBodyChange}
+        /&gt;
+&nbsp;
+        &lt;div className="button-group"&gt;
+          &lt;button className="button" onClick={this.handleClearForm}&gt;Clear&lt;/button&gt;
+          &lt;input className="button" type="submit" value="Submit" /&gt;
+        &lt;/div&gt;
+      &lt;/form&gt;
+    )
+  }
+}
+&nbsp;
+export default ArticleFormContainer;
+&nbsp;
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Fri Jul 06 2018 12:09:22 GMT-0400 (EDT)
+</div>
+</div>
+<script src="../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../sorter.js"></script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "title": "JavaScript Promises",
+    "body": "Don't make Promises you can't resolve!"
+  },
+  {
+    "id": 2,
+    "title": "Just Harry Potter Things...",
+    "body": "Something something muggle. Something something hufflepuff."
+  },
+  {
+    "title": "myArticleTitle",
+    "body": "myArticleBody",
+    "id": 3
+  },
+  {
+    "title": "LaunchAcademy Digest",
+    "body": "Boston 21 is learning advanced React.js",
+    "id": 4
+  },
+  {
+    "title": "Disney anthology ",
+    "body": "This book has never been published before.",
+    "id": 5
+  },
+  {
+    "title": "sdfsdfs",
+    "body": "sdfsfddf",
+    "id": 6
+  }
+]
