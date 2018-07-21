@@ -19,7 +19,7 @@ describe('ArticleShow', () => {
   });
 
   it('renders a paragraph tag', () => {
-    expect(wrapper.find('p')).toBePresent();
+    expect(wrapper.find('html')).toBePresent();
 
   });
 
